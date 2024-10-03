@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-.Calc {
-  width: 500px;
-  border: 5px solid black;
-  margin: auto;
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ece1ff;
   border-radius: 10px;
-  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.Disp {
-  border: 5px solid rgb(0, 0, 0);
-  height: 50px;
-  font-size: 2em;
+.head {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.display {
+  font-size: 1.6em;
   text-align: right;
-  padding: 10px;
-  background-color: #f0f0f0; 
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
-.Button {
-  border: 5px solid rgb(255, 0, 212);
-  height: 70px; 
-  width: calc(25% - 10px);
-  margin: 5px; 
-  display: inline-block;
-  font-size: 1.5em; 
-  background-color: #fff;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.ButtonsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.buttons button {
+  font-size: 1.5em;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.name-button {
+  font-size: 1.5em;
+  padding: 12px 25px;
+  margin-top: 15px;
+  background-color: #a25eab;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
